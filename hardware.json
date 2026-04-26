@@ -1,0 +1,9 @@
+{
+  "hardware": [
+    {
+      "id": "d9b88d25-fde6-400a-ad8a-cdf1910ee176:hiwonder_rrc_board",
+      "driver": "hiwonder_rrc_board",
+      "params": {}
+    }
+  ]
+}

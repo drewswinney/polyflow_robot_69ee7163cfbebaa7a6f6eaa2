@@ -1,0 +1,55 @@
+{
+  "type": "controller",
+  "name": "Motor Controller",
+  "entry_point": "motor_controller/node.py",
+  "topics": [
+    {
+      "name": "command",
+      "direction": "subscribe",
+      "msg_type": "std_msgs/Float64"
+    }
+  ],
+  "services": [],
+  "actions": [],
+  "parameters_schema": {
+    "motor_id": {
+      "label": "Motor",
+      "requiresInstance": true,
+      "type": "entity",
+      "required": true,
+      "description": "Joint this controller drives in open-loop speed/duty mode. Resolves to a joint IO on a Part added to the robot. Serialized to hardware.json at deploy.",
+      "entity_source": {
+        "selector": "components.io",
+        "filters": { "direction": "output", "type": "joint" },
+        "value_field": "_id",
+        "label_field": "name"
+      },
+      "ui": { "group": "Motor", "order": 1 }
+    },
+    "mode": {
+      "label": "Mode",
+      "type": "enum",
+      "values": ["speed", "duty"],
+      "default": "speed",
+      "description": "SPEED uses rad/s (or driver-native units); DUTY uses a normalized [-1, 1] value.",
+      "ui": { "group": "Motor", "order": 2 }
+    },
+    "max_speed": {
+      "label": "Max Speed",
+      "type": "number",
+      "default": 1.0,
+      "description": "Clamp for SPEED mode. Ignored in DUTY mode (clamped to [-1, 1]).",
+      "ui": { "group": "Motor", "order": 3 }
+    },
+    "timeout_s": {
+      "label": "Command Timeout (s)",
+      "type": "number",
+      "default": 0.0,
+      "description": "Watchdog timeout applied to every command; 0 uses the driver default.",
+      "ui": { "group": "Motor", "order": 4 }
+    }
+  },
+  "defaults": {
+    "rate_hz": 50
+  }
+}
