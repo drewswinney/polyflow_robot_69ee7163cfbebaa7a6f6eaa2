@@ -4,6 +4,21 @@
       "id": "d9b88d25-fde6-400a-ad8a-cdf1910ee176:hiwonder_rrc_board",
       "driver": "hiwonder_rrc_board",
       "params": {}
+    },
+    {
+      "id": "69ee758cf25c6f3e7bc9f1b6",
+      "driver": "hiwonder_rrc_motor",
+      "params": {
+        "port": 4,
+        "invert": false
+      },
+      "host": "d9b88d25-fde6-400a-ad8a-cdf1910ee176:hiwonder_rrc_board"
+    },
+    {
+      "id": "69ee7913df065b5cb52a51d1",
+      "driver": "hiwonder_rrc_motor",
+      "params": {},
+      "host": "d9b88d25-fde6-400a-ad8a-cdf1910ee176:hiwonder_rrc_board"
     }
   ]
 }
