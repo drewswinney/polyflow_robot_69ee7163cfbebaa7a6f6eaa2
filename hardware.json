@@ -6,6 +6,12 @@
       "params": {}
     },
     {
+      "id": "69ee74f9f25c6f3e7bc9e5c6",
+      "driver": "hiwonder_rrc_motor",
+      "params": {},
+      "host": "d9b88d25-fde6-400a-ad8a-cdf1910ee176:hiwonder_rrc_board"
+    },
+    {
       "id": "69ee758cf25c6f3e7bc9f1b6",
       "driver": "hiwonder_rrc_motor",
       "params": {
