@@ -16,6 +16,7 @@ def generate_launch_description():
                 "POLYFLOW_PINS": json.dumps(json.loads('[{"pin_id":"69a3c8e4b3f393789aad6f84:cmd_vel","name":"cmd_vel","direction":"input","msg_type":"geometry_msgs/Twist"},{"pin_id":"69a3c8e4b3f393789aad6f84:mode","name":"mode","direction":"input","msg_type":"polyflow_msgs/ModeState"},{"pin_id":"69a3c8e4b3f393789aad6f84:front_left_motor","name":"front_left_motor","direction":"output","msg_type":"std_msgs/Float64"},{"pin_id":"69a3c8e4b3f393789aad6f84:rear_left_motor","name":"rear_left_motor","direction":"output","msg_type":"std_msgs/Float64"},{"pin_id":"69a3c8e4b3f393789aad6f84:front_right_motor","name":"front_right_motor","direction":"output","msg_type":"std_msgs/Float64"},{"pin_id":"69a3c8e4b3f393789aad6f84:rear_right_motor","name":"rear_right_motor","direction":"output","msg_type":"std_msgs/Float64"}]')),
                 "POLYFLOW_INBOUND_CONNECTIONS": json.dumps(json.loads('[{"connection_id":"69ee7a38df065b5cb52a5a4b","source_node_id":"69ee7a34df065b5cb52a598f","source_pin_id":"cmd_vel","target_pin_id":"cmd_vel"},{"connection_id":"69ee7a44df065b5cb52a5bc5","source_node_id":"69ee7a41df065b5cb52a5b09","source_pin_id":"mode","target_pin_id":"mode"}]')),
                 "POLYFLOW_OUTBOUND_CONNECTIONS": json.dumps(json.loads('[{"connection_id":"69efd997cdd484dffb87a31e","target_node_id":"69efd978cdd484dffb879eb5","source_pin_id":"front_left_motor","target_pin_id":"command"},{"connection_id":"69effcb506a36db25eb7b4dd","target_node_id":"69effca806a36db25eb7b395","source_pin_id":"rear_left_motor","target_pin_id":"command"},{"connection_id":"69effcb706a36db25eb7b549","target_node_id":"69effcaa06a36db25eb7b403","source_pin_id":"front_right_motor","target_pin_id":"command"},{"connection_id":"69effcb906a36db25eb7b5b5","target_node_id":"69effcad06a36db25eb7b471","source_pin_id":"rear_right_motor","target_pin_id":"command"}]')),
+                "POLYFLOW_NODE_LOG_DIR": "/var/log/polyflow/nodes",
             }
         ),
         Node(
@@ -30,6 +31,7 @@ def generate_launch_description():
                 "POLYFLOW_PINS": json.dumps(json.loads('[{"pin_id":"69a3c77bb3f393789aad6f62:axes","name":"axes","direction":"output","msg_type":"polyflow_msgs/GamepadAxes"},{"pin_id":"69a3c77bb3f393789aad6f62:buttons","name":"buttons","direction":"output","msg_type":"polyflow_msgs/GamepadButtons"},{"pin_id":"69a3c77bb3f393789aad6f62:cmd_vel","name":"cmd_vel","direction":"output","msg_type":"geometry_msgs/Twist"}]')),
                 "POLYFLOW_INBOUND_CONNECTIONS": json.dumps(json.loads('[]')),
                 "POLYFLOW_OUTBOUND_CONNECTIONS": json.dumps(json.loads('[{"connection_id":"69ee7a38df065b5cb52a5a4b","target_node_id":"69ee79f5df065b5cb52a5591","source_pin_id":"cmd_vel","target_pin_id":"cmd_vel"}]')),
+                "POLYFLOW_NODE_LOG_DIR": "/var/log/polyflow/nodes",
             }
         ),
         Node(
@@ -44,6 +46,7 @@ def generate_launch_description():
                 "POLYFLOW_PINS": json.dumps(json.loads('[{"pin_id":"69a3cd36b3f393789aad7079:set_mode","name":"set_mode","direction":"input","msg_type":"polyflow_msgs/ModeCommand"},{"pin_id":"69a3cd36b3f393789aad7079:mode","name":"mode","direction":"output","msg_type":"polyflow_msgs/ModeState"}]')),
                 "POLYFLOW_INBOUND_CONNECTIONS": json.dumps(json.loads('[]')),
                 "POLYFLOW_OUTBOUND_CONNECTIONS": json.dumps(json.loads('[{"connection_id":"69ee7a44df065b5cb52a5bc5","target_node_id":"69ee79f5df065b5cb52a5591","source_pin_id":"mode","target_pin_id":"mode"}]')),
+                "POLYFLOW_NODE_LOG_DIR": "/var/log/polyflow/nodes",
             }
         ),
         Node(
@@ -58,6 +61,7 @@ def generate_launch_description():
                 "POLYFLOW_PINS": json.dumps(json.loads('[{"pin_id":"69a3cd62b3f393789aad70a2:command","name":"command","direction":"input","msg_type":"std_msgs/Float64"}]')),
                 "POLYFLOW_INBOUND_CONNECTIONS": json.dumps(json.loads('[{"connection_id":"69efd997cdd484dffb87a31e","source_node_id":"69ee79f5df065b5cb52a5591","source_pin_id":"front_left_motor","target_pin_id":"command"}]')),
                 "POLYFLOW_OUTBOUND_CONNECTIONS": json.dumps(json.loads('[]')),
+                "POLYFLOW_NODE_LOG_DIR": "/var/log/polyflow/nodes",
             }
         ),
         Node(
@@ -72,6 +76,7 @@ def generate_launch_description():
                 "POLYFLOW_PINS": json.dumps(json.loads('[{"pin_id":"69a3cd62b3f393789aad70a2:command","name":"command","direction":"input","msg_type":"std_msgs/Float64"}]')),
                 "POLYFLOW_INBOUND_CONNECTIONS": json.dumps(json.loads('[{"connection_id":"69effcb906a36db25eb7b5b5","source_node_id":"69ee79f5df065b5cb52a5591","source_pin_id":"rear_right_motor","target_pin_id":"command"}]')),
                 "POLYFLOW_OUTBOUND_CONNECTIONS": json.dumps(json.loads('[]')),
+                "POLYFLOW_NODE_LOG_DIR": "/var/log/polyflow/nodes",
             }
         ),
         Node(
@@ -86,6 +91,7 @@ def generate_launch_description():
                 "POLYFLOW_PINS": json.dumps(json.loads('[{"pin_id":"69a3cd62b3f393789aad70a2:command","name":"command","direction":"input","msg_type":"std_msgs/Float64"}]')),
                 "POLYFLOW_INBOUND_CONNECTIONS": json.dumps(json.loads('[{"connection_id":"69effcb506a36db25eb7b4dd","source_node_id":"69ee79f5df065b5cb52a5591","source_pin_id":"rear_left_motor","target_pin_id":"command"}]')),
                 "POLYFLOW_OUTBOUND_CONNECTIONS": json.dumps(json.loads('[]')),
+                "POLYFLOW_NODE_LOG_DIR": "/var/log/polyflow/nodes",
             }
         ),
         Node(
@@ -100,6 +106,7 @@ def generate_launch_description():
                 "POLYFLOW_PINS": json.dumps(json.loads('[{"pin_id":"69a3cd62b3f393789aad70a2:command","name":"command","direction":"input","msg_type":"std_msgs/Float64"}]')),
                 "POLYFLOW_INBOUND_CONNECTIONS": json.dumps(json.loads('[{"connection_id":"69effcb706a36db25eb7b549","source_node_id":"69ee79f5df065b5cb52a5591","source_pin_id":"front_right_motor","target_pin_id":"command"}]')),
                 "POLYFLOW_OUTBOUND_CONNECTIONS": json.dumps(json.loads('[]')),
+                "POLYFLOW_NODE_LOG_DIR": "/var/log/polyflow/nodes",
             }
         ),
     ])
