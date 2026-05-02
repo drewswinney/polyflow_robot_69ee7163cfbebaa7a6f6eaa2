@@ -1,7 +1,7 @@
 {
   "hardware": [
     {
-      "id": "d9b88d25-fde6-400a-ad8a-cdf1910ee176:hiwonder_rrc_board",
+      "id": "d9b88d25_fde6_400a_ad8a_cdf1910ee176_hiwonder_rrc_board",
       "driver": "hiwonder_rrc_board",
       "params": {}
     },
@@ -11,7 +11,7 @@
       "params": {
         "port": 2
       },
-      "host": "d9b88d25-fde6-400a-ad8a-cdf1910ee176:hiwonder_rrc_board"
+      "host": "d9b88d25_fde6_400a_ad8a_cdf1910ee176_hiwonder_rrc_board"
     },
     {
       "id": "69ee7500f25c6f3e7bc9e6ce",
@@ -19,7 +19,7 @@
       "params": {
         "port": 3
       },
-      "host": "d9b88d25-fde6-400a-ad8a-cdf1910ee176:hiwonder_rrc_board"
+      "host": "d9b88d25_fde6_400a_ad8a_cdf1910ee176_hiwonder_rrc_board"
     },
     {
       "id": "69ee758cf25c6f3e7bc9f1b6",
@@ -28,7 +28,7 @@
         "port": 4,
         "invert": false
       },
-      "host": "d9b88d25-fde6-400a-ad8a-cdf1910ee176:hiwonder_rrc_board"
+      "host": "d9b88d25_fde6_400a_ad8a_cdf1910ee176_hiwonder_rrc_board"
     },
     {
       "id": "69ee7913df065b5cb52a51d1",
@@ -36,7 +36,7 @@
       "params": {
         "port": 1
       },
-      "host": "d9b88d25-fde6-400a-ad8a-cdf1910ee176:hiwonder_rrc_board"
+      "host": "d9b88d25_fde6_400a_ad8a_cdf1910ee176_hiwonder_rrc_board"
     }
   ]
 }
